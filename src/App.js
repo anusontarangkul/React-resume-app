@@ -18,6 +18,15 @@ function App() {
   useEffect(() => {
     fetchJobs();
   }, []);
+
+  if (loading) {
+    return (
+      <section className="section loading">
+        <h1>loading...</h1>
+      </section>
+    )
+  }
+
   return (
     <h1>Hello</h1>
   );
