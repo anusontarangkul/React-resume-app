@@ -26,9 +26,14 @@ function App() {
       </section>
     )
   }
-
+  const { company, dates, duties, title } = jobs[value];
   return (
-    <h1>Hello</h1>
+    <section className="section">
+      <div className="title">
+        <h2>Experience</h2>
+        <div className="underline"></div>
+      </div>
+    </section>
   );
 }
 
